@@ -1,0 +1,327 @@
+[
+    {
+        "label": "gradio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "gradio",
+        "description": "gradio",
+        "detail": "gradio",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "register_face",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "recognize_and_mark_multiple",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "register_face",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "recognize_and_mark_multiple",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "DeepFace",
+        "importPath": "deepface",
+        "description": "deepface",
+        "isExtraImport": true,
+        "detail": "deepface",
+        "documentation": {}
+    },
+    {
+        "label": "DeepFace",
+        "importPath": "deepface",
+        "description": "deepface",
+        "isExtraImport": true,
+        "detail": "deepface",
+        "documentation": {}
+    },
+    {
+        "label": "PIL.Image",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "PIL.Image",
+        "description": "PIL.Image",
+        "detail": "PIL.Image",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "upload_and_register",
+        "kind": 2,
+        "importPath": "AI_Attendance_System.app",
+        "description": "AI_Attendance_System.app",
+        "peekOfCode": "def upload_and_register(img, name):\n    return register_face(img, name)\n# def upload_and_recognize(img):\n#     return recognize_and_mark_multiple(img)\ndef upload_and_recognize(img, class_id):\n    return recognize_and_mark_multiple(img, class_id)\ndef show_attendance():\n    df = pd.read_csv(\"attendance.csv\", names=[\"Name\", \"Timestamp\"])\n    return df.tail(10)\n# with gr.Blocks() as demo:",
+        "detail": "AI_Attendance_System.app",
+        "documentation": {}
+    },
+    {
+        "label": "upload_and_recognize",
+        "kind": 2,
+        "importPath": "AI_Attendance_System.app",
+        "description": "AI_Attendance_System.app",
+        "peekOfCode": "def upload_and_recognize(img, class_id):\n    return recognize_and_mark_multiple(img, class_id)\ndef show_attendance():\n    df = pd.read_csv(\"attendance.csv\", names=[\"Name\", \"Timestamp\"])\n    return df.tail(10)\n# with gr.Blocks() as demo:\n#     gr.Markdown(\"## 🧠 AI Face Recognition Attendance System\")\n#     with gr.Tab(\"📥 Register Face\"):\n#         with gr.Row():\n#             reg_img = gr.Image()",
+        "detail": "AI_Attendance_System.app",
+        "documentation": {}
+    },
+    {
+        "label": "show_attendance",
+        "kind": 2,
+        "importPath": "AI_Attendance_System.app",
+        "description": "AI_Attendance_System.app",
+        "peekOfCode": "def show_attendance():\n    df = pd.read_csv(\"attendance.csv\", names=[\"Name\", \"Timestamp\"])\n    return df.tail(10)\n# with gr.Blocks() as demo:\n#     gr.Markdown(\"## 🧠 AI Face Recognition Attendance System\")\n#     with gr.Tab(\"📥 Register Face\"):\n#         with gr.Row():\n#             reg_img = gr.Image()\n#             reg_name = gr.Textbox(label=\"Enter Name\")\n#         reg_btn = gr.Button(\"Register\")",
+        "detail": "AI_Attendance_System.app",
+        "documentation": {}
+    },
+    {
+        "label": "background_css",
+        "kind": 5,
+        "importPath": "AI_Attendance_System.app",
+        "description": "AI_Attendance_System.app",
+        "peekOfCode": "background_css = \"\"\"\n<style>\n    body, html {\n        height: 100%;\n        margin: 0;\n        padding: 0;\n    }\n    .gradio-container {\n        background-image: url('https://revaeduin.s3.ap-south-1.amazonaws.com/uploads/images/66e80256542d31726480982.webp');\n        background-size: cover;",
+        "detail": "AI_Attendance_System.app",
+        "documentation": {}
+    },
+    {
+        "label": "register_face",
+        "kind": 2,
+        "importPath": "AI_Attendance_System.utils",
+        "description": "AI_Attendance_System.utils",
+        "peekOfCode": "def register_face(image, name):\n    # Convert to PIL Image if it's a NumPy array\n    if isinstance(image, np.ndarray):\n         # Or any size your model expects\n        image = Image.fromarray(image.astype('uint8'))\n        image = image.resize((224, 224)) \n    # Ensure the directory exists\n    save_dir = \"registered_faces\"\n    os.makedirs(save_dir, exist_ok=True)\n    path = os.path.join(save_dir, f\"{name}.jpg\")",
+        "detail": "AI_Attendance_System.utils",
+        "documentation": {}
+    },
+    {
+        "label": "recognize_and_mark_multiple",
+        "kind": 2,
+        "importPath": "AI_Attendance_System.utils",
+        "description": "AI_Attendance_System.utils",
+        "peekOfCode": "def recognize_and_mark_multiple(image_path, class_id):\n    try:\n        faces = DeepFace.extract_faces(img_path=image_path, enforce_detection=False)\n        recognized = []\n        for idx, face_data in enumerate(faces):\n            face_img = face_data[\"face\"]\n            temp_path = f\"temp_face_{idx}.jpg\"\n            cv2.imwrite(temp_path, face_img)\n            try:\n                result = DeepFace.find(img_path=temp_path, db_path=\"registered_faces\", enforce_detection=False, model_name=\"VGG-Face\")",
+        "detail": "AI_Attendance_System.utils",
+        "documentation": {}
+    },
+    {
+        "label": "save_attendance",
+        "kind": 2,
+        "importPath": "AI_Attendance_System.utils",
+        "description": "AI_Attendance_System.utils",
+        "peekOfCode": "def save_attendance(name, timestamp, class_id):\n    file_path = 'attendance.csv'\n    # If the file doesn't exist or is empty, write headers\n    if not os.path.exists(file_path) or os.path.getsize(file_path) == 0:\n        with open(file_path, 'w', newline='') as f:\n            writer = csv.writer(f)\n            writer.writerow([\"Name\", \"Timestamp\", \"Class\"])\n    # Read the file safely\n    df = pd.read_csv(file_path)\n    # Avoid duplicate for same person, class, and day",
+        "detail": "AI_Attendance_System.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_class_id",
+        "kind": 2,
+        "importPath": "AI_Attendance_System.utils",
+        "description": "AI_Attendance_System.utils",
+        "peekOfCode": "def get_class_id(timestamp):\n    hour = int(timestamp.split(\" \")[1].split(\":\")[0])\n    if 9 <= hour < 11:\n        return \"Class 1\"\n    elif 11 <= hour < 13:\n        return \"Class 2\"\n    elif 13 <= hour < 15:\n        return \"Class 3\"\n    elif 15 <= hour < 17:\n        return \"Class 4\"",
+        "detail": "AI_Attendance_System.utils",
+        "documentation": {}
+    },
+    {
+        "label": "send_to_slcm",
+        "kind": 2,
+        "importPath": "AI_Attendance_System.utils",
+        "description": "AI_Attendance_System.utils",
+        "peekOfCode": "def send_to_slcm(name, timestamp, class_id):\n    \"\"\"\n    Simulated API call to SLCM backend to mark attendance.\n    Replace the URL and payload format as per actual SLCM API.\n    \"\"\"\n    try:\n        url = \"https://webhook.site/b68018db-2c2f-4a52-9e07-931363d39dda\"  # Replace with real SLCM URL\n        payload = {\n            \"student_name\": name,\n            \"attendance_time\": timestamp,",
+        "detail": "AI_Attendance_System.utils",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "AI_Attendance_System.utils",
+        "description": "AI_Attendance_System.utils",
+        "peekOfCode": "def login(username, password):\n    \"\"\"\n    Simple login function.\n    Replace with your actual authentication logic (e.g., database or external API).\n    \"\"\"\n    if username == \"admin\" and password == \"pass123\":\n        return True\n    else:\n        return False",
+        "detail": "AI_Attendance_System.utils",
+        "documentation": {}
+    },
+    {
+        "label": "upload_and_register",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def upload_and_register(img, name):\n    return register_face(img, name)\n# def upload_and_recognize(img):\n#     return recognize_and_mark_multiple(img)\ndef upload_and_recognize(img, class_id):\n    return recognize_and_mark_multiple(img, class_id)\ndef show_attendance():\n    df = pd.read_csv(\"attendance.csv\", names=[\"Name\", \"Timestamp\"])\n    return df.tail(10)\n# with gr.Blocks() as demo:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "upload_and_recognize",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def upload_and_recognize(img, class_id):\n    return recognize_and_mark_multiple(img, class_id)\ndef show_attendance():\n    df = pd.read_csv(\"attendance.csv\", names=[\"Name\", \"Timestamp\"])\n    return df.tail(10)\n# with gr.Blocks() as demo:\n#     gr.Markdown(\"## 🧠 AI Face Recognition Attendance System\")\n#     with gr.Tab(\"📥 Register Face\"):\n#         with gr.Row():\n#             reg_img = gr.Image()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "show_attendance",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def show_attendance():\n    df = pd.read_csv(\"attendance.csv\", names=[\"Name\", \"Timestamp\"])\n    return df.tail(10)\n# with gr.Blocks() as demo:\n#     gr.Markdown(\"## 🧠 AI Face Recognition Attendance System\")\n#     with gr.Tab(\"📥 Register Face\"):\n#         with gr.Row():\n#             reg_img = gr.Image()\n#             reg_name = gr.Textbox(label=\"Enter Name\")\n#         reg_btn = gr.Button(\"Register\")",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "background_css",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "background_css = \"\"\"\n<style>\n    body, html {\n        height: 100%;\n        margin: 0;\n        padding: 0;\n    }\n    .gradio-container {\n        background-image: url('https://revaeduin.s3.ap-south-1.amazonaws.com/uploads/images/66e80256542d31726480982.webp');\n        background-size: cover;",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "register_face",
+        "kind": 2,
+        "importPath": "utils",
+        "description": "utils",
+        "peekOfCode": "def register_face(image, name):\n    # Convert to PIL Image if it's a NumPy array\n    if isinstance(image, np.ndarray):\n         # Or any size your model expects\n        image = Image.fromarray(image.astype('uint8'))\n        image = image.resize((224, 224)) \n    # Ensure the directory exists\n    save_dir = \"registered_faces\"\n    os.makedirs(save_dir, exist_ok=True)\n    path = os.path.join(save_dir, f\"{name}.jpg\")",
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "recognize_and_mark_multiple",
+        "kind": 2,
+        "importPath": "utils",
+        "description": "utils",
+        "peekOfCode": "def recognize_and_mark_multiple(image_path, class_id):\n    try:\n        faces = DeepFace.extract_faces(img_path=image_path, enforce_detection=False)\n        recognized = []\n        for idx, face_data in enumerate(faces):\n            face_img = face_data[\"face\"]\n            temp_path = f\"temp_face_{idx}.jpg\"\n            cv2.imwrite(temp_path, face_img)\n            try:\n                result = DeepFace.find(img_path=temp_path, db_path=\"registered_faces\", enforce_detection=False, model_name=\"VGG-Face\")",
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "save_attendance",
+        "kind": 2,
+        "importPath": "utils",
+        "description": "utils",
+        "peekOfCode": "def save_attendance(name, timestamp, class_id):\n    file_path = 'attendance.csv'\n    # If the file doesn't exist or is empty, write headers\n    if not os.path.exists(file_path) or os.path.getsize(file_path) == 0:\n        with open(file_path, 'w', newline='') as f:\n            writer = csv.writer(f)\n            writer.writerow([\"Name\", \"Timestamp\", \"Class\"])\n    # Read the file safely\n    df = pd.read_csv(file_path)\n    # Avoid duplicate for same person, class, and day",
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_class_id",
+        "kind": 2,
+        "importPath": "utils",
+        "description": "utils",
+        "peekOfCode": "def get_class_id(timestamp):\n    hour = int(timestamp.split(\" \")[1].split(\":\")[0])\n    if 9 <= hour < 11:\n        return \"Class 1\"\n    elif 11 <= hour < 13:\n        return \"Class 2\"\n    elif 13 <= hour < 15:\n        return \"Class 3\"\n    elif 15 <= hour < 17:\n        return \"Class 4\"",
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "send_to_slcm",
+        "kind": 2,
+        "importPath": "utils",
+        "description": "utils",
+        "peekOfCode": "def send_to_slcm(name, timestamp, class_id):\n    \"\"\"\n    Simulated API call to SLCM backend to mark attendance.\n    Replace the URL and payload format as per actual SLCM API.\n    \"\"\"\n    try:\n        url = \"https://webhook.site/b68018db-2c2f-4a52-9e07-931363d39dda\"  # Replace with real SLCM URL\n        payload = {\n            \"student_name\": name,\n            \"attendance_time\": timestamp,",
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "utils",
+        "description": "utils",
+        "peekOfCode": "def login(username, password):\n    \"\"\"\n    Simple login function.\n    Replace with your actual authentication logic (e.g., database or external API).\n    \"\"\"\n    if username == \"admin\" and password == \"pass123\":\n        return True\n    else:\n        return False",
+        "detail": "utils",
+        "documentation": {}
+    }
+]
