@@ -42,5 +42,6 @@ Push this project to a public GitHub repo
 Go to Hugging Face Spaces
 
 Create a new Space → Select Gradio → Connect your repo
+[LIve Demo](https://huggingface.co/spaces/girishgowda/AI_Attendance_System)
 
 Done! ✅
